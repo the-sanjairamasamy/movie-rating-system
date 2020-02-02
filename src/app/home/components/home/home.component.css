@@ -1,0 +1,17 @@
+.layout{
+    margin: 50px;
+}
+.header {
+    padding: 5px 0px;
+    text-align: center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #00a065;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 600;
+  }
+
+  .content{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;  
+    font-size: 15px;
+  }
