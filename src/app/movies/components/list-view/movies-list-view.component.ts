@@ -6,12 +6,12 @@ import { MovieService } from '../../service/movie-services';
 
 @Component({
   selector: 'app-list-movie-view',
-  templateUrl: './list-movie-view.component.html',
-  styleUrls: ['./list-movie-view.component.css'],
+  templateUrl: './movies-list-view.component.html',
+  styleUrls: ['./movies-list-view.component.css'],
   providers:[MovieService]
 })
 
-export class ListMovieViewComponent implements OnInit {
+export class MoviesListViewComponent implements OnInit {
  
   items: Movie[];
  

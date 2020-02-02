@@ -5,11 +5,11 @@ body {
   
   /* Header */
   .header {
-    padding: 10px;
+    padding: 25px;
     text-align: center;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    color: #00a065;
-    font-size: 25px;
+    color: #328466;
+    font-size: 30px;
     text-align: left;
-    font-weight: 600;
+    font-weight: 800;
   }

@@ -1,0 +1,43 @@
+#modal-content-wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    
+}
+
+#modal-title {
+    font-size: 20px;
+
+}
+
+.header {
+    padding: 0px 0px;
+    text-align: center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #328466;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 600;
+  }
+
+#modal-footer {
+    justify-self: right;
+    align-self: center;
+    margin: 13px;
+}
+::ng-deep .mat-dialog-container {
+    overflow-y: hidden !important;
+    padding: 18px !important;
+}
+
+#modal-action-button {
+    background-color: #4CAF50;
+    color: #fff;
+    margin-right: 30px;
+  }
+
+
+#modal-cancel-button {
+    background-color: #4e4e4e;
+    color: white;
+}

@@ -1,0 +1,16 @@
+<div id="modal-content-wrapper">
+    <header id="modal-header" class="header" >
+        <h1 id="modal-title">Rate Movies</h1>
+    </header>
+    <section id="modal-body">
+        <ng-template [cdkPortalOutlet]="portal"></ng-template>
+    </section>
+    <footer id="modal-footer">
+        <button mat-raised-button id="modal-action-button" (click)="save()">
+            Save
+        </button>
+        <button mat-raised-button id="modal-cancel-button" (click)="close()">
+           Cancel
+        </button>
+    </footer>
+</div>

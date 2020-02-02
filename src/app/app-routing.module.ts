@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ListMovieViewComponent } from './movies/components/list-movie-view/list-movie-view.component';
+import { MoviesListViewComponent } from './movies/components/list-view/movies-list-view.component';
 import { HomeComponent } from './home/components/home/home.component';
 
 
 const routes: Routes = [ 
-   { path:"Movies", component:ListMovieViewComponent },
+   { path:"Movies", component:MoviesListViewComponent },
    { path:"Home", component:HomeComponent },
    { path:"**", redirectTo:'Home' },];
 

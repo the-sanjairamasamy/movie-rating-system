@@ -1,12 +1,12 @@
 export class Movie {
     id:number;
     title:string;
-    rating:string;
+    rating:number;
     review:string;
 
     constructor(id:number,
         title:string,
-        rating:string,
+        rating:number,
         review:string){
             this.id = id;
             this.title = title;

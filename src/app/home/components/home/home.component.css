@@ -1,11 +1,11 @@
 .layout{
-    margin: 50px;
+    margin: 25px 50px;
 }
 .header {
     padding: 5px 0px;
     text-align: center;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    color: #00a065;
+    color: #328466;
     font-size: 18px;
     text-align: left;
     font-weight: 600;
@@ -14,4 +14,15 @@
   .content{
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;  
     font-size: 15px;
+    float: left;
+  }
+
+  #random-rating-button-holder{
+    float: left;
+    padding: 8px;
+  }
+
+  #random-rating-button{
+    background-color: #4CAF50;
+    color: #fff;
   }

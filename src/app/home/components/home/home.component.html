@@ -1,8 +1,12 @@
 <div class="layout">
-  <div class="header">Movie Reviews</div>
+  <div class="header">Reviews</div>
   <p class="content">
-    Movie reviews are one of the best ways to decide whether or not a movie is worth watching. Below you look at the history of movie reviews 
-    and how they changed the way to look movies. 
+    Movie reviews are one of the best ways to decide whether a movie is worth watching. Do you want to rate the movie which ever you have watched in the list,then click
+     on the button
   </p>
+  <main id="random-rating-button-holder">
+    <button mat-raised-button id="random-rating-button" (click)="loadMovies()">Random Rating</button>
+  </main>
+  
   <app-list-movie-view></app-list-movie-view>
 </div>

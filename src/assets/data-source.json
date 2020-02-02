@@ -1,62 +1,62 @@
 [
     {
         "title": "The Shawshank Redemption",
-        "rating": "1",
-        "review":"Awsome",
+        "rating": 5,
+        "review":"Awesome",
         "id": 1
     },
     {
         "title": "The Godfather",
-        "rating": "2",
+        "rating": 4,
         "review":"Excellent",
         "id": 2
     },
     {
         "title": "The Godfather: Part II",
-        "rating": "3",
-        "review":"Super",
+        "rating": 4,
+        "review":"Excellent",
         "id": 3
     },
     {
         "title": "Pulp Fiction",
-        "rating": "4",
-        "review":"Very Good",
+        "rating": 3,
+        "review":"Good",
         "id": 4
     },
     {
         "title": "The Good, the Bad and the Ugly",
-        "rating": "5",
-        "review":"Good",
+        "rating": 1,
+        "review":"Poor",
         "id": 5
     },
     {
         "title": "The Dark Knight",
-        "rating": "6",
-        "review":"Very Nice",
+        "rating": 3,
+        "review":"Good",
         "id": 6
     },
     {
         "title": "12 Angry Men",
-        "rating": "7",
-        "review":"Nice",
+        "rating": 3,
+        "review":"Good",
         "id": 7
     },
     {
         "title": "Schindler's List",
-        "rating": "8",
+        "rating": 2,
         "review":"Average",
         "id": 8
     },
     {
         "title": "The Lord of the Rings: The Return of the King",
-        "rating": "9",
-        "review":"Above Average",
+        "rating": 2,
+        "review":"Average",
         "id": 9
     },
     {
         "title": "Fight Club",
-        "rating": "10",
-        "review":"Ok",
+        "rating": 1,
+        "review":"Poor",
         "id": 10
     }
 ]

@@ -10,7 +10,9 @@
         <tr *ngFor="let movie of items">
           <td>{{movie.title}}</td>
           <td>{{movie.review}}</td>
-          <td>{{movie.rating}}</td>
+          <td>
+            <app-rating [rating]='movie.rating' [itemId]='movie.id'></app-rating>
+          </td>
         </tr>
       </tbody>
     </table>
