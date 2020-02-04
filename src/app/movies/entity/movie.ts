@@ -3,7 +3,8 @@ export class Movie {
     title:string;
     rating:number;
     review:string;
-
+    modified:Date;
+    created:Date
     constructor(id:number,
         title:string,
         rating:number,
@@ -12,5 +13,7 @@ export class Movie {
             this.title = title;
             this.rating = rating;
             this.review = review;
+            this.modified = null;
+            this.created = null;
         }
 }

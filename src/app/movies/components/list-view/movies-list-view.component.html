@@ -1,17 +1,19 @@
     <table id="movies">
       <thead>
         <tr>
+          <th>S.No</th>
           <th>Title</th>
           <th>Review</th>
           <th>Rating</th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let movie of items">
+        <tr *ngFor="let movie of MovieList">
+          <td>{{movie.id}}</td>
           <td>{{movie.title}}</td>
           <td>{{movie.review}}</td>
           <td>
-            <app-rating [rating]='movie.rating' [itemId]='movie.id'></app-rating>
+            <app-rating (ratingClick)='updateRating($event);' [rating]='movie.rating' [itemId]='movie.id'></app-rating>
           </td>
         </tr>
       </tbody>

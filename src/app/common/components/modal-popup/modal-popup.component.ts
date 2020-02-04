@@ -1,7 +1,7 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, ViewChild } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { ComponentPortal } from '@angular/cdk/portal';
-
+import { ComponentPortal, CdkPortalOutlet } from '@angular/cdk/portal';
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-modal-popup',
   templateUrl: './modal-popup.component.html',
@@ -10,17 +10,15 @@ import { ComponentPortal } from '@angular/cdk/portal';
 
 export class ModalPopupComponent implements OnInit {
   portal: ComponentPortal<any>;
-  constructor(public dialogRef: MatDialogRef<ModalPopupComponent>, @Inject(MAT_DIALOG_DATA) public data: any) { }
+
+  constructor(public dialogRef: MatDialogRef<ModalPopupComponent>, @Inject(MAT_DIALOG_DATA) public data: any,   private router: Router) { }
 
   ngOnInit() {
     this.portal = new ComponentPortal(this.data.component);
   }
 
-  save() {
-    this.close();
-  }
-
   close() {
     this.dialogRef.close();
+    this.router.navigate(['/Home'])
   }
 }

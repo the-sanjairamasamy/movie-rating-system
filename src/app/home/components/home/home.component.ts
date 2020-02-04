@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, Output, EventEmitter } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { ModalPopupComponent } from 'src/app/common/components/modal-popup/modal-popup.component';
 import { MoviesListViewComponent } from 'src/app/movies/components/list-view/movies-list-view.component';
+import {Subject} from 'rxjs';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -11,7 +13,7 @@ import { MoviesListViewComponent } from 'src/app/movies/components/list-view/mov
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public modalDialog: MatDialog) { }
+  constructor(public modalDialog: MatDialog,private router: Router) { }
 
   ngOnInit() {
   }
@@ -25,8 +27,14 @@ export class HomeComponent implements OnInit {
     dialogConfig.width = "1200px";
     dialogConfig.data = {
       component: MoviesListViewComponent
+      
     }
-    this.modalDialog.open(ModalPopupComponent, dialogConfig);
+  
+    this.router.navigate(['/Rating'])
+    this.modalDialog.open(ModalPopupComponent, dialogConfig).afterClosed()
+    .subscribe(response => {
+
+    });
   }
 
 

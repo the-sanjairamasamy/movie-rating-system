@@ -30,14 +30,8 @@
     padding: 18px !important;
 }
 
-#modal-action-button {
-    background-color: #4CAF50;
-    color: #fff;
-    margin-right: 30px;
-  }
 
-
-#modal-cancel-button {
+#modal-close-button {
     background-color: #4e4e4e;
     color: white;
 }

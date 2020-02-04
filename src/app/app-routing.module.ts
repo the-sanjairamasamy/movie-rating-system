@@ -4,8 +4,9 @@ import { MoviesListViewComponent } from './movies/components/list-view/movies-li
 import { HomeComponent } from './home/components/home/home.component';
 
 
+
 const routes: Routes = [ 
-   { path:"Movies", component:MoviesListViewComponent },
+  { path:"Rating", component:HomeComponent },
    { path:"Home", component:HomeComponent },
    { path:"**", redirectTo:'Home' },];
 

@@ -29,6 +29,12 @@
     color: #f70;
 }
 
+.saved{
+    color: #f70;
+    font-size: 13px;
+    float: left;
+}
+
 .rating:not(:checked) > label:hover,
 .rating:not(:checked) > label:hover ~ label {
     color: gold;
